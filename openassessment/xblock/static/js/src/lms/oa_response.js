@@ -79,7 +79,6 @@ export class ResponseView {
             view.announceStatus = false;
             view.dateFactory.apply();
             view.checkSubmissionAbility();
-            view.setupRubric();
           });
         },
       ).fail(() => {
@@ -245,15 +244,6 @@ export class ResponseView {
       const textFieldsIsNotBlank = !this.response().every((element) => $.trim(element) === '');
 
       return !((this.textResponse === 'required') && !textFieldsIsNotBlank);
-    }
-
-    setupRubric() {
-      // Initialize the rubric
-      const $rubric = $('#oa_rubric__read_only__content', this.element);
-      if ($rubric.size() > 0) {
-        const rubricElement = $rubric.get(0);
-        const rubric = new Rubric(rubricElement);
-      }
     }
 
     /**
