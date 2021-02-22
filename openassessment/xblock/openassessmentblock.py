@@ -828,6 +828,7 @@ class OpenAssessmentBlock(MessageMixin,
         block.group_access = config['group_access']
         block.teams_enabled = config['teams_enabled']
         block.selected_teamset_id = config['selected_teamset_id']
+        block.show_rubric_during_response = config['show_rubric_during_response']
         return block
 
     @property

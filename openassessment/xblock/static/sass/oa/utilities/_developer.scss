@@ -1134,7 +1134,6 @@
         background: $color-decorative-quaternary;
         border-radius: ($baseline-v/10);
 
-        
         #read_only_rubric_header_control {
             padding-bottom: ($baseline-v/4);
         }
@@ -1152,7 +1151,6 @@
             display: inline; 
         }
 
-
         // fields
         .assessment__fields {
           margin-bottom: $baseline-v;
@@ -1161,8 +1159,6 @@
         // rubric question
         .assessment__rubric__question {
           @extend %ui-rubric-question;
-
-
         }
     
         // rubric options
@@ -1171,7 +1167,6 @@
           overflow: visible; // needed for ui-hints
         }
       }
-    
 }
 .self-assessment__display__header
 .self-assessment__display__title,
